@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body .main{
+    height: 100vh;
+}
+
+.main {
+    background-color: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.box{
+    margin: 1rem;
+    padding: 2.5rem;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.box.brand{
+    color:#1b1b1b;
+    height: 30%;
+    width: 400px;
+}
+
+.box.login {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-top: solid 2px #fff;
+    border-left: solid 2px #fff;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+    border-right: solid 2px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    margin: 10px;
+    width: 400px;
+}
+
+.box h2{
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.form-group label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-group input{
+    border: none;
+}
+
+.form-group input:focus{
+    outline: none;
+}
+
+.register input{
+    background-color: rgba(22, 22, 35, 0.5);
+    color: #fff;
+}
+
+.register input::placeholder{
+    color: #FFF;
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+span{
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.brand{
+    padding: 1.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.brand-image{
+    margin-bottom: 1rem;
+}
+
+.brand-image img{
+    width: 50%
+}
+
+.brand-desc{
+    display: block;
+}
+
+.brand-name{
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.brand-text{
+    font-size: 1rem;
+}
+
+@media (min-width:768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width:992px) {
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn:hover{
+        transform: translateY(5%);
+    }
+}
